@@ -77,8 +77,6 @@ GLuint Shader::linkShaders(GLuint vertShader, GLuint fragShader){
     GLuint program = glCreateProgram();
 
     if (program){
-        GLint linked = 0;
-
         if (vertShader)
             glAttachShader(program, vertShader);
 
